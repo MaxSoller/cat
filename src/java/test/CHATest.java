@@ -84,9 +84,9 @@ public class CHATest {
       outStream.println(sb.toString());
 
 
-      UtilTest.compareOutput(
-          baos.toString(), new File(UtilTest.changeExtension(filename, ".out")),
-          new File(UtilTest.changeExtension(filename, ".expected")));
+      CatUtilTest.compareOutput(
+          baos.toString(), new File(CatUtilTest.changeExtension(filename, ".out")),
+          new File(CatUtilTest.changeExtension(filename, ".expected")));
 
     } finally {
       System.setOut(out);
@@ -95,6 +95,6 @@ public class CHATest {
 
   @Parameters(name = "{0}")
   public static Iterable<Object[]> getTests() {
-    return UtilTest.getTestParametersSubFolders(TEST_DIRECTORY, ".java");
+    return CatUtilTest.getTestParametersSubFolders(TEST_DIRECTORY, ".java");
   }
 }

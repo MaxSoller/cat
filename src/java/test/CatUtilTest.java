@@ -51,7 +51,7 @@ import org.extendj.ast.CompilationUnit;
 import org.extendj.ast.MethodDecl;
 import org.extendj.ast.Program;
 
-public class UtilTest {
+public class CatUtilTest {
   @SuppressWarnings("javadoc")
   public static Iterable<Object[]>
   getTestParametersSubFolders(File testDirectory, String extension) {
