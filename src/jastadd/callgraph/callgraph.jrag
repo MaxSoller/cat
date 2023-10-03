@@ -315,8 +315,8 @@ public
    *
    * @return True, as this declaration is an instance initializer.
    */
-  syn boolean BodyDecl.isStaticInitializer() = false;
-  eq StaticInitializer.isStaticInitializer() = true;
+  // syn boolean BodyDecl.isStaticInitializer() = false;
+  // eq StaticInitializer.isStaticInitializer() = true;
 
   /**
    * Returns a list of instance initializers declared within the class.
